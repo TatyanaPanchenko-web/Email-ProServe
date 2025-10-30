@@ -11,7 +11,7 @@
   <meta name="color-scheme" content="light dark" />
   <meta name="supported-color-schemes" content="light dark" />
   <style type="text/css">
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900");
 
     body {
       -webkit-font-smoothing: antialiased;
@@ -44,9 +44,10 @@
 
     *[class*="blur-icons"] {
       filter: drop-shadow(0 0 3px #ffffff) drop-shadow(0 0 5px #ffffff);
+      filter: DropShadow(Style=Outer, Color='#ffffff', OffX=0, OffY=0, Positive=1, BlurX=3, BlurY=3)
     }
 
-    @media screen and (max-width: 599.98px) {
+    /* @media screen and (max-width: 599.98px) {
       .full-width {
         width: 100% !important;
         max-width: 100% !important;
@@ -97,7 +98,7 @@
         width: 100% !important;
         max-width: 100% !important;
       }
-    }
+    } */
 
     :root {
       color-scheme: light dark;
@@ -123,71 +124,77 @@
       }
 
       a {
-        color: #ffffff !important;
+        color: #000000 !important;
       }
 
       hr {
         border-color: #ffffff !important;
       }
 
-      table[class="no-changed"] {
+      table[class*="no-changed"] {
         background-color: transparent !important;
-        border-radius: 4px
+        border-radius: 4px;
       }
 
-      /* td[class="no-changed"] {
-        background-color: transparent !important;
-      } */
 
-      td[class="no-changed"] {
+      td[class*="no-changed"] {
         border: 1px solid #000000 !important;
 
       }
 
-      *[class="no-changed"] {
+      *[class*="no-changed"] {
         color: #000000 !important;
       }
 
+      a[class*="change-color"] {
+        color: #ffffff !important
+      }
 
     }
   </style>
-  <style type="text/css" media="only screen and (max-width: 480px)">
+  <style type="text/css" media="only screen and (max-width: 600px)">
     /* Mobile styles */
-    @media only screen and (max-width: 480px) {
-      table[class="w320"] {
+    @media only screen and (max-width: 600px) {
+      table[class*="w320"] {
         width: 320px !important;
       }
 
-      table[class="w300"] {
+      table[class*="w300"] {
         width: 300px !important;
       }
 
-      table[class="w290"] {
+      table[class*="w290"] {
         width: 290px !important;
       }
 
-      td[class="w320"] {
+      td[class*="w320"] {
         width: 320px !important;
       }
 
-      td[class="mobile-center"] {
-        text-align: center !important;
-      }
-
-      td[class="mobile-padding"] {
+      td[class*="mobile-padding"] {
         padding-left: 20px !important;
         padding-right: 20px !important;
         padding-bottom: 20px !important;
       }
 
-      td[class="mobile-block"] {
+      td[class*="mobile-padding-none"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+      td[class*="mobile-block"] {
         display: block !important;
         width: 100% !important;
         text-align: left !important;
         padding-bottom: 20px !important;
       }
 
-      td[class="mobile-border"] {
+      td[class*="mobile-center"] {
+        text-align: center !important;
+      }
+
+      td[class*="mobile-border"] {
         border: 0 !important;
       }
 
@@ -204,8 +211,7 @@
   <center style="width: 100%; table-layout: fixed;">
 
 
-    <table border=" 0" cellpadding="0" cellspacing="0" role="presentation" width="100%" height="100%" bgcolor="#ffffff"
-      style="
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" bgcolor="#ffffff" style="
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             color: #000000;
@@ -222,7 +228,7 @@
             <tr>
               <td>
                 <center>
-                  <table width="600" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <table width="600" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td align="center" style="padding-top: 60px; ">
                         <a href="https://google.com" target="_blank" rel="noopener">
@@ -241,7 +247,7 @@
             <tr>
               <td>
                 <center>
-                  <table width="600" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
                       <td align="center" style="padding: 40px 48px 24px; ">
                         <div style=" max-width: 504px; background-color:#FFF0F0; ">
@@ -261,25 +267,18 @@
                     </tr>
                     <tr>
                       <td align="center" valign="top" style="padding: 0 48px 60px">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <table border="0" cellpadding="0" cellspacing="0">
                           <tr>
-                            <td style="text-align:center; width: 97px;background-color:#ffffff;">
-                              <!--[if mso]>
-                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://google.com" style="v-text-anchor:middle;width:120px;" stroke="f" fillcolor="transparent">
-                            <w:anchorlock/>
-                            <center>
-                          <![endif]-->
+                            <td
+                              style="text-align:center; width: 97px; height: 42px;background-color:#ffffff; border: 1px solid #000; border-radius: 4px;">
                               <div>
                                 <a href="https://google.com" target="_blank" rel="noopener"
-                                  style="border: 1px solid #000;
-                            border-radius: 4px; width: 97px; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;padding: 13px 5px;">
+                                  style="width: 97px;
+                             background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
                                   Try it now!
                                 </a>
                               </div>
-                              <!--[if mso]>
-                            </center>
-                          </v:rect>
-                          <![endif]-->
+
                             </td>
                           </tr>
                         </table>
@@ -295,15 +294,14 @@
             <tr>
               <td style="padding: 0 16px 60px; ">
                 <center>
-                  <table width=" 600" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <table width=" 600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
                       <td class="mobile-block mobile-center" width="50%" style="padding: 16px 16px 0;">
                         <div style="
                     width: 100%;
                     max-width: 252px;
                     display: inline-block;
-                                     
-                  ">
+                                                       ">
                           <div style="padding-bottom: 24px">
                             <img src="https://i.ibb.co/1fp5r7L9/Power-Moves-Calendar.jpg" alt="Power-Moves-Calendar"
                               border="0" width="252" style="display: block" />
@@ -328,38 +326,31 @@
                             fast! Install the Blush plugin to&nbsp;customize all the
                             illustrations!
                           </p>
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                          <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
-                              <td style="text-align:center; width: 97px;background-color:#ffffff;">
-                                <!--[if mso]>
-                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://google.com" style="v-text-anchor:middle;width:120px;" stroke="f" fillcolor="transparent">
-                            <w:anchorlock/>
-                            <center>
-                          <![endif]-->
+                              <td
+                                style="text-align:center; width: 97px; height: 42px;background-color:#ffffff; border: 1px solid #000; border-radius: 4px;">
                                 <div>
                                   <a href="https://google.com" target="_blank" rel="noopener"
-                                    style="border: 1px solid #000;
-                            border-radius: 4px; width: 97px; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none; padding: 13px 5px;">
+                                    style="width: 97px;
+                             background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
                                     Try it now!
                                   </a>
                                 </div>
-                                <!--[if mso]>
-                            </center>
-                          </v:rect>
-                          <![endif]-->
+
                               </td>
                             </tr>
                           </table>
 
                         </div>
                       </td>
-                      <td class="mobile-block mobile-center" width="50%" style="padding: 16px 16px 0;>
+                      <td class="mobile-block mobile-center" width="50%" style="padding: 16px 16px 0;">
                         <div style=" width: 100%; max-width: 252px; display: inline-block; ">
-                          <div style=" padding-bottom: 24px">
-                        <img src="https://i.ibb.co/0V1svV0M/Power-Moves-Chat.jpg" alt="Power-Moves-Chat" border="0"
-                          width="252" style="display: block" />
-                        </div>
-                        <h2 style="
+                          <div style="padding-bottom: 24px">
+                            <img src="https://i.ibb.co/0V1svV0M/Power-Moves-Chat.jpg" alt="Power-Moves-Chat" border="0"
+                              width="252" style="display: block" />
+                          </div>
+                          <h2 style="
                       margin: 0;
                       font-weight: 700;
                       font-size: 27px;
@@ -367,41 +358,33 @@
                       padding-bottom: 16px;
                       text-align: left;
                     ">
-                          Customize this email template!
-                        </h2>
-                        <p style="
+                            Customize this email template!
+                          </h2>
+                          <p style="
                       margin: 0;
                       font-size: 19px;
                       text-align: left;
                       padding-bottom: 16px;
                     ">
-                          Boost your emails with Blush! Create dope emails easy and
-                          fast! Install the Blush plugin to&nbsp;customize all the
-                          illustrations!
-                        </p>
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                          <tr>
-                            <td style="text-align:center; width: 97px;background-color:#ffffff;">
-                              <!--[if mso]>
-                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://google.com" style="v-text-anchor:middle;width:120px;" stroke="f" fillcolor="transparent">
-                            <w:anchorlock/>
-                            <center>
-                          <![endif]-->
-                              <div>
-                                <a href="https://google.com" target="_blank" rel="noopener"
-                                  style="border: 1px solid #000;
-                            border-radius: 4px; width: 97px; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;padding: 13px 5px;">
-                                  Try it now!
-                                </a>
-                              </div>
-                              <!--[if mso]>
-                            </center>
-                          </v:rect>
-                          <![endif]-->
-                            </td>
-                          </tr>
-                        </table>
+                            Boost your emails with Blush! Create dope emails easy and
+                            fast! Install the Blush plugin to&nbsp;customize all the
+                            illustrations!
+                          </p>
+                          <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="mobile-center"
+                                style="text-align:center; width: 97px; height: 42px;background-color:#ffffff; border: 1px solid #000; border-radius: 4px;">
+                                <div>
+                                  <a href="https://google.com" target="_blank" rel="noopener"
+                                    style="width: 97px;
+                             background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
+                                    Try it now!
+                                  </a>
+                                </div>
 
+                              </td>
+                            </tr>
+                          </table>
                         </div>
                       </td>
                     </tr>
@@ -415,7 +398,7 @@
             <tr>
               <td style="padding: 0 24px 60px">
                 <center>
-                  <table width="600" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
                       <td align="center" style="padding-bottom: 16px; ">
                         <div style="max-width: 552px">
@@ -426,7 +409,7 @@
                     </tr>
                     <tr>
                       <td style="padding: 0 30px;">
-                        <table cellpadding="0" cellspacing="0" role="presentation">
+                        <table cellpadding="0" cellspacing="0">
                           <tr>
                             <td style="padding-bottom: 8px">
                               <h2 style="
@@ -448,26 +431,19 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
-                              <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <td class="mobile-center">
+                              <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                  <td style="text-align:center; width: 97px;background-color:#ffffff;">
-                                    <!--[if mso]>
-                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://google.com" style="v-text-anchor:middle;width:120px;" stroke="f" fillcolor="transparent">
-                            <w:anchorlock/>
-                            <center>
-                          <![endif]-->
+                                  <td
+                                    style="text-align:center; width: 97px; height: 42px;background-color:#ffffff; border: 1px solid #000; border-radius: 4px;">
                                     <div>
                                       <a href="https://google.com" target="_blank" rel="noopener"
-                                        style="border: 1px solid #000;
-                            border-radius: 4px; width: 97px; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;padding: 13px 5px;">
+                                        style="width: 97px;
+                             background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
                                         Try it now!
                                       </a>
                                     </div>
-                                    <!--[if mso]>
-                            </center>
-                          </v:rect>
-                          <![endif]-->
+
                                   </td>
                                 </tr>
                               </table>
@@ -487,9 +463,10 @@
             <tr>
               <td align="center" valign="top" bgcolor="#E2D4FF" style="vertical-align: middle; text-align: center">
                 <center>
-                  <table width="600" border="0" cellpadding="0" cellspacing="0" role="presentation" class="no-changed">
+                  <table align="center" width="600" border="0" cellpadding="0" cellspacing="0" class="w320 no-changed">
                     <tr>
-                      <td width="50%" class="mobile-block" style="padding: 33px 24px;">
+                      <td align="center" width="50%" class="mobile-block mobile-center mobile-block mobile-padding-none"
+                        style="padding: 33px 24px; text-align: center;">
                         <div style="
                     width: 100%;
                     max-width: 252px;
@@ -506,38 +483,38 @@
                     ">
                             Customize this email template!
                           </h2>
-                          <p class="no-changed" style="margin: 0; font-size: 19px; padding-bottom: 16px">
+                          <p class="no-changed" style="margin: 0; font-size: 19px;">
                             Boost your emails with Blush! Create dope emails easy and
                             fast!
                           </p>
-                          <table class="no-changed" align="center" border="0" cellpadding="0" cellspacing="0"
-                            role="presentation">
-                            <tr>
-                              <td style="text-align:center; width: 97px;">
-                                <!--[if mso]>
-                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://google.com" style="v-text-anchor:middle;width:120px;" stroke="f" fillcolor="transparent">
-                            <w:anchorlock/>
-                            <center>
-                          <![endif]-->
-                                <div>
-                                  <a href="https://google.com" target="_blank" rel="noopener"
-                                    style="border: 1px solid #000;
-                            border-radius: 4px; width: 97px; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;padding: 13px 5px;-webkit-text-size-adjust:none;">
-                                    Try it now!
-                                  </a>
-                                </div>
-                                <!--[if mso]>
-                            </center>
-                          </v:rect>
-                          <![endif]-->
-                              </td>
-                            </tr>
-                          </table>
 
                         </div>
-                      </td>
-                      <td width="50%" class="mobile-block">
 
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td style="padding-bottom: 16px;"></td>
+                          </tr>
+                        </table>
+                        <table class="no-changed" align="center" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td align="center" class="no-changed"
+                              style="text-align:center; width: 97px; height: 42px;background-color:#ffffff; border: 1px solid #000; border-radius: 4px;">
+                              <div>
+                                <a href="https://google.com" target="_blank" rel="noopener"
+                                  style="width: 97px;
+                             background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
+                                  Try it now!
+                                </a>
+                              </div>
+
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- </td>
+                          </tr>
+                        </table> -->
+                      </td>
+                      <td align="center" width="50%" class="mobile-block mobile-block" style="text-align: center; ">
 
                         <div style="
                     width: 100%;
@@ -565,9 +542,9 @@
 
             <!--simple text-->
             <tr>
-              <td style="padding: 60px 24px 40px">
+              <td class="mobile-center" style="padding: 60px 24px 40px">
                 <center>
-                  <table width="600" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
                       <td style="padding-bottom: 20px">
                         <p style="margin: 0; font-size: 16px">
@@ -594,7 +571,7 @@
             <tr>
               <td style="padding: 0 24px 60px; text-align: center">
                 <center>
-                  <table width="600" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
                       <td style="padding-bottom: 40px">
                         <hr style="border: 1px solid #000" />
@@ -614,32 +591,32 @@
                       </td>
                     </tr>
                     <tr>
-                      <td align="center" valign="middle" style="padding-bottom: 25px">
-                        <div style="vertical-align: baseline; ">
-                          <div border="0" width="24" style="display: inline-block; vertical-align: middle">
+                      <td align="center" valign="middle" style="padding-bottom: 25px;">
+                        <div>
+                          <span style="vertical-align: middle">
                             <a href="https://x.com/" target="_blank" rel="noopener">
                               <img class="blur-icons" src="https://i.ibb.co/sJ5m5vMk/twitter.png" width="24" height="24"
-                                alt="twitter">
+                                alt="twitter" />
                             </a>
-                          </div>
-                          <div border="0" width="24" style="display: inline-block; vertical-align: middle">
+                          </span>
+                          <span style="vertical-align: middle">
                             <a href="https://www.instagram.com/" target="_blank" rel="noopener">
                               <img class="blur-icons" src="https://i.ibb.co/KpFmh693/instagram.png" width="24"
-                                height="24" alt="instagram">
+                                height="24" alt="instagram" />
                             </a>
-                          </div>
-                          <div border="0" width="24" style="display: inline-block; vertical-align: middle"><a
-                              href="https://www.youtube.com/" target="_blank" rel="noopener">
+                          </span>
+                          <span style="vertical-align: middle"><a href="https://www.youtube.com/" target="_blank"
+                              rel="noopener">
                               <img class="blur-icons" src="https://i.ibb.co/8LZdGxQf/youtube.png" width="24" height="24"
-                                alt="youtube"></a></div>
-                          <div border="0" width="24" style="display: inline-block; vertical-align: middle"><a
-                              href="https://dribbble.com/" target="_blank" rel="noopener">
+                                alt="youtube" /></a></span>
+                          <span style="vertical-align: middle"><a href="https://dribbble.com/" target="_blank"
+                              rel="noopener">
                               <img class="blur-icons" src="https://i.ibb.co/7xDZqJK7/dribbble.png" width="24"
-                                height="24" alt="dribbble"></a></div>
-                          <div border="0" width="24" style="display: inline-block; vertical-align: middle"><a
-                              href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                                height="24" alt="dribbble" /></a></span>
+                          <span style="vertical-align: middle"><a href="https://www.linkedin.com/" target="_blank"
+                              rel="noopener">
                               <img class="blur-icons" src="https://i.ibb.co/r2Mpd894/linkedin.png" width="24"
-                                height="24" alt="linkedin"></a></div>
+                                height="24" alt="linkedin" /></a></span>
                         </div>
                       </td>
                     </tr>
@@ -652,7 +629,7 @@
                     </tr>
                     <tr>
                       <td align="center" style="padding-bottom: 30px">
-                        <a href="https://google.com" target="_blank" rel="noopener" style="
+                        <a class="change-color" href="https://google.com" target="_blank" rel="noopener" style="
                         color: #000;
                         text-decoration: underline;
                         font-size: 13px;
