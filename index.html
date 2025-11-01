@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blush</title>
+  <title>ProServe</title>
   <meta name="color-scheme" content="light dark" />
   <meta name="supported-color-schemes" content="light dark" />
   <style type="text/css">
@@ -42,9 +42,8 @@
       font-size: 14px;
     }
 
-    *[class*="blur-icons"] {
-      filter: drop-shadow(0 0 3px #ffffff) drop-shadow(0 0 5px #ffffff);
-      filter: DropShadow(Style=Outer, Color='#ffffff', OffX=0, OffY=0, Positive=1, BlurX=3, BlurY=3)
+    .block-left {
+      text-align: left;
     }
 
     /* @media screen and (max-width: 599.98px) {
@@ -152,9 +151,9 @@
 
     }
   </style>
-  <style type="text/css" media="only screen and (max-width: 600px)">
+  <style type="text/css" media="only screen and (max-width: 480px)">
     /* Mobile styles */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 480px) {
       table[class*="w320"] {
         width: 320px !important;
       }
@@ -186,7 +185,8 @@
       td[class*="mobile-block"] {
         display: block !important;
         width: 100% !important;
-        text-align: left !important;
+        box-sizing: border-box;
+        /* text-align: left !important; */
         padding-bottom: 20px !important;
       }
 
@@ -198,9 +198,6 @@
         border: 0 !important;
       }
 
-      td[class*="reveal"] {
-        display: block !important;
-      }
     }
   </style>
 </head>
@@ -217,23 +214,20 @@
             color: #000000;
             margin: 0;
             padding: 0;
-            max-width: 600px;
             width: 100%;
-            font-family: 'Noto Sans', Geneva, sans-serif;
-                    ">
+            font-family: 'Noto Sans', Geneva, sans-serif;">
       <tr>
         <td align="center" valign="top" width="100%">
           <table cellspacing="0" cellpadding="0" width="100%">
             <!--logo-->
             <tr>
-              <td>
+              <td style="padding-top: 20px; ">
                 <center>
-                  <table width="600" border="0" cellpadding="0" cellspacing="0">
+                  <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
-                      <td align="center" style="padding-top: 60px; ">
-                        <a href="https://google.com" target="_blank" rel="noopener">
-                          <img src="https://i.ibb.co/rRJxwbNj/logo.png" alt="Blush logo" border="0" width="24"
-                            style="display: block" />
+                      <td align="center" <a href="https://google.com" target="_blank" rel="noopener">
+                        <img src="https://i.ibb.co/HfBNHg9F/logo-blur.png" alt="Blush logo" border="0" width="48"
+                          style="display: block" />
                         </a>
                       </td>
                     </tr>
@@ -245,28 +239,27 @@
 
             <!--hero-->
             <tr>
-              <td>
+              <td style="padding-bottom: 60px;">
                 <center>
                   <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
-                      <td align="center" style="padding: 40px 48px 24px; ">
-                        <div style=" max-width: 504px; background-color:#FFF0F0; ">
-                          <img src="https://i.ibb.co/ZRZ5LhZr/hero-Container.png" alt="hero-Container" border="0"
-                            width="100%" style="display: block" />
+                      <td width="540" align="center" style="padding: 0 30px 24px;">
+                        <div>
+                          <img src="https://i.ibb.co/hx7qKz0k/cafe.png" alt="cafe" width="100%"
+                            style="display: block; width: 100%;object-fit:cover; object-position: bottom;" />
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td align="center" style="padding: 0 48px 24px">
+                      <td class="mobile-padding" align="center" style="padding:0 30px 24px; bd">
                         <p style="margin: 0; font-size: 19px">
-                          Boost your emails with Blush! Create dope emails easy and
-                          fast! Install the Blush plugin to customize all the
-                          illustrations!
+                          If your cafe is facing challenges in attracting new guests, increasing sales, or you want to
+                          take your business to the next level — we are here to help!
                         </p>
                       </td>
                     </tr>
                     <tr>
-                      <td align="center" valign="top" style="padding: 0 48px 60px">
+                      <td align="center" valign="top">
                         <table border="0" cellpadding="0" cellspacing="0">
                           <tr>
                             <td
@@ -275,7 +268,7 @@
                                 <a href="https://google.com" target="_blank" rel="noopener"
                                   style="width: 97px;
                              background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
-                                  Try it now!
+                                  Start Now
                                 </a>
                               </div>
 
@@ -292,19 +285,18 @@
 
             <!--two columns-->
             <tr>
-              <td style="padding: 0 16px 60px; ">
+              <td style="padding-bottom: 60px;">
                 <center>
-                  <table width=" 600" border="0" cellpadding="0" cellspacing="0" class="w320">
+                  <table align="center" width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
-                      <td class="mobile-block mobile-center" width="50%" style="padding: 16px 16px 0;">
+                      <td align="center" class="mobile-block mobile-padding" width="50%"
+                        style="padding: 0 20px 0 30px;">
                         <div style="
                     width: 100%;
-                    max-width: 252px;
-                    display: inline-block;
-                                                       ">
-                          <div style="padding-bottom: 24px">
-                            <img src="https://i.ibb.co/1fp5r7L9/Power-Moves-Calendar.jpg" alt="Power-Moves-Calendar"
-                              border="0" width="252" style="display: block" />
+                    display: inline-block;">
+                          <div style="padding-bottom: 16px; width: 250px;">
+                            <img src="https://i.ibb.co/WpsG7Jgr/bartender.png" alt="waiter" border="0" width="100%"
+                              style="display: block;" />
                           </div>
                           <h2 style="
                       margin: 0;
@@ -314,7 +306,7 @@
                       padding-bottom: 16px;
                       text-align: left;
                     ">
-                            Customize this email template!
+                            Enhancing Staff Efficiency
                           </h2>
                           <p style="
                       margin: 0;
@@ -322,9 +314,8 @@
                       text-align: left;
                       padding-bottom: 16px;
                     ">
-                            Boost your emails with Blush! Create dope emails easy and
-                            fast! Install the Blush plugin to&nbsp;customize all the
-                            illustrations!
+                            We offer comprehensive training and development programs to ensure your staff performs at
+                            their best with increased motivation
                           </p>
                           <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
@@ -334,7 +325,7 @@
                                   <a href="https://google.com" target="_blank" rel="noopener"
                                     style="width: 97px;
                              background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
-                                    Try it now!
+                                    Start Now
                                   </a>
                                 </div>
 
@@ -344,11 +335,11 @@
 
                         </div>
                       </td>
-                      <td class="mobile-block mobile-center" width="50%" style="padding: 16px 16px 0;">
-                        <div style=" width: 100%; max-width: 252px; display: inline-block; ">
-                          <div style="padding-bottom: 24px">
-                            <img src="https://i.ibb.co/0V1svV0M/Power-Moves-Chat.jpg" alt="Power-Moves-Chat" border="0"
-                              width="252" style="display: block" />
+                      <td align="center" class="mobile-block" width="50%" style="padding: 0 30px 0 20px;">
+                        <div style=" width: 100%; display: inline-block; ">
+                          <div style="padding-bottom: 16px; width: 250px;">
+                            <img src="https://i.ibb.co/jPrZvTyK/waiter.png" alt="bartender" border="0" width="100%"
+                              style="display: block" />
                           </div>
                           <h2 style="
                       margin: 0;
@@ -358,7 +349,7 @@
                       padding-bottom: 16px;
                       text-align: left;
                     ">
-                            Customize this email template!
+                            Enhancing Staff Efficiency
                           </h2>
                           <p style="
                       margin: 0;
@@ -366,9 +357,8 @@
                       text-align: left;
                       padding-bottom: 16px;
                     ">
-                            Boost your emails with Blush! Create dope emails easy and
-                            fast! Install the Blush plugin to&nbsp;customize all the
-                            illustrations!
+                            We help develop standard procedures and service protocols that improve the quality and
+                            consistency of guest experiences
                           </p>
                           <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
@@ -378,7 +368,7 @@
                                   <a href="https://google.com" target="_blank" rel="noopener"
                                     style="width: 97px;
                              background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
-                                    Try it now!
+                                    Start Now
                                   </a>
                                 </div>
 
@@ -396,19 +386,19 @@
 
             <!--big image-->
             <tr>
-              <td style="padding: 0 24px 60px">
+              <td style="padding-bottom: 60px;">
                 <center>
                   <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
                       <td align="center" style="padding-bottom: 16px; ">
-                        <div style="max-width: 552px">
-                          <img src="https://i.ibb.co/6RKvfTcv/Hands-Pinches.png" alt="Hands-Pinches" border="0"
-                            width="100%" style="display: block" />
+                        <div>
+                          <img src="https://i.ibb.co/cSdfQLkR/people.png" alt="people in cafe" width="100%"
+                            style="display: block; width: 100%;object-fit:cover; object-position: bottom;" />
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td style="padding: 0 30px;">
+                      <td class="mobile-block" style="padding: 0 30px;">
                         <table cellpadding="0" cellspacing="0">
                           <tr>
                             <td style="padding-bottom: 8px">
@@ -417,16 +407,15 @@
                         font-weight: 700;
                         font-size: 27px;
                         color: #1c1e23;">
-                                Customize this email template!
+                                Development of Marketing Strategies
                               </h2>
                             </td>
                           </tr>
                           <tr>
                             <td style="padding-bottom: 16px">
                               <p style="margin: 0; font-size: 19px">
-                                Boost your emails with Blush! Create dope emails easy and
-                                fast! Install the Blush plugin to&nbsp;customize all the
-                                illustrations!
+                                We specialize in creating customized marketing plans tailored specifically to your cafe
+                                or restaurant’s unique identity and target audience
                               </p>
                             </td>
                           </tr>
@@ -440,7 +429,7 @@
                                       <a href="https://google.com" target="_blank" rel="noopener"
                                         style="width: 97px;
                              background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
-                                        Try it now!
+                                        Start Now
                                       </a>
                                     </div>
 
@@ -465,13 +454,12 @@
                 <center>
                   <table align="center" width="600" border="0" cellpadding="0" cellspacing="0" class="w320 no-changed">
                     <tr>
-                      <td align="center" width="50%" class="mobile-block mobile-center mobile-block mobile-padding-none"
-                        style="padding: 33px 24px; text-align: center;">
+                      <td width="50%" class="mobile-block mobile-padding" style="padding: 33px 30px;">
                         <div style="
                     width: 100%;
                     max-width: 252px;
                     display: inline-block;
-                    text-align: center;
+                    text-align: left;;
                     vertical-align: middle;
                   ">
                           <h2 class="no-changed" style="
@@ -481,11 +469,11 @@
                       color: #1c1e23;
                       padding-bottom: 16px;
                     ">
-                            Customize this email template!
+                            Menu сonsultation and pricing strategies
                           </h2>
                           <p class="no-changed" style="margin: 0; font-size: 19px;">
-                            Boost your emails with Blush! Create dope emails easy and
-                            fast!
+                            We provide expert guidance on designing menus that maximize profitability while appealing to
+                            your target audience
                           </p>
 
                         </div>
@@ -495,15 +483,15 @@
                             <td style="padding-bottom: 16px;"></td>
                           </tr>
                         </table>
-                        <table class="no-changed" align="center" border="0" cellpadding="0" cellspacing="0">
+                        <table class="no-changed" border="0" cellpadding="0" cellspacing="0">
                           <tr>
                             <td align="center" class="no-changed"
-                              style="text-align:center; width: 97px; height: 42px;background-color:#ffffff; border: 1px solid #000; border-radius: 4px;">
+                              style="width: 97px; height: 42px;background-color:#ffffff; border: 1px solid #000; border-radius: 4px;">
                               <div>
                                 <a href="https://google.com" target="_blank" rel="noopener"
                                   style="width: 97px;
                              background-color:#ffffff; color:#000000;display:inline-block;font-size:14px;font-weight:500;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">
-                                  Try it now!
+                                  Start Now
                                 </a>
                               </div>
 
@@ -525,8 +513,8 @@
                     text-align: center;
                   ">
                           <!-- <div style="padding-bottom: 24px; text-align: center; border: 1px solid #000;"> -->
-                          <img src="https://i.ibb.co/Pzv8svSM/Citt-Living-Room.png" alt="Living-Room" border="0"
-                            width="216" style="display: inline-block" />
+                          <img src="https://i.ibb.co/0pKrb3XJ/menu.png" alt="Living-Room" border="0" width="216"
+                            style="display: inline-block" />
                           <!-- </div> -->
                         </div>
 
@@ -546,18 +534,17 @@
                 <center>
                   <table width="600" border="0" cellpadding="0" cellspacing="0" class="w320">
                     <tr>
-                      <td style="padding-bottom: 20px">
+                      <td style=" padding-bottom: 20px">
                         <p style="margin: 0; font-size: 16px">
-                          Boost your emails with Blush! Create dope emails easy and
-                          fast! Install the Blush plugin to&nbsp;customize all the
-                          illustrations!
+                          Our clients notice an increase in sales volume and a strengthening of customer loyalty within
+                          just a few steps of our collaboration.
                         </p>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <p style="margin: 0; font-size: 16px">
-                          Create the coolest emails!
+                          Take your business to the next level!
                         </p>
                       </td>
                     </tr>
@@ -579,51 +566,52 @@
                     </tr>
                     <tr>
                       <td align="center">
-                        <p style="margin: 0; font-size: 13px">Corporation</p>
+                        <p style="margin: 0; font-size: 13px"><b>ProServe</b></p>
                       </td>
                     </tr>
                     <tr>
                       <td align="center" style="padding-bottom: 10px">
                         <p style="margin: 0; font-size: 13px">
-                          You are receiving this email because you opted in via our
-                          <br />website.
+                          You received this email because you visited
+                          <br />our website
                         </p>
                       </td>
                     </tr>
                     <tr>
-                      <td align="center" valign="middle" style="padding-bottom: 25px;">
+
+                      <td align="center" valign="middle" style="padding-bottom: 25px; ">
                         <div>
-                          <span style="vertical-align: middle">
+                          <span style="display: inline-block; vertical-align: middle;">
                             <a href="https://x.com/" target="_blank" rel="noopener">
-                              <img class="blur-icons" src="https://i.ibb.co/sJ5m5vMk/twitter.png" width="24" height="24"
-                                alt="twitter" />
+                              <img src="https://i.ibb.co/DPzCbpsH/twitter-blur.png" width="40" alt="twitter" />
                             </a>
                           </span>
-                          <span style="vertical-align: middle">
+                          <span style="display: inline-block; vertical-align: middle;">
                             <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                              <img class="blur-icons" src="https://i.ibb.co/KpFmh693/instagram.png" width="24"
-                                height="24" alt="instagram" />
+                              <img src="https://i.ibb.co/M5RG2T3V/instagram-blur.png" width="36" alt="instagram" />
                             </a>
                           </span>
-                          <span style="vertical-align: middle"><a href="https://www.youtube.com/" target="_blank"
-                              rel="noopener">
-                              <img class="blur-icons" src="https://i.ibb.co/8LZdGxQf/youtube.png" width="24" height="24"
+                          <span style="display: inline-block; vertical-align: middle;"><a
+                              href="https://www.youtube.com/" target="_blank" rel="noopener">
+                              <img src="https://i.ibb.co/FbdQQDQD/youtube-blur.png" width="36"
                                 alt="youtube" /></a></span>
-                          <span style="vertical-align: middle"><a href="https://dribbble.com/" target="_blank"
-                              rel="noopener">
-                              <img class="blur-icons" src="https://i.ibb.co/7xDZqJK7/dribbble.png" width="24"
-                                height="24" alt="dribbble" /></a></span>
-                          <span style="vertical-align: middle"><a href="https://www.linkedin.com/" target="_blank"
-                              rel="noopener">
-                              <img class="blur-icons" src="https://i.ibb.co/r2Mpd894/linkedin.png" width="24"
-                                height="24" alt="linkedin" /></a></span>
+                          <span style="display: inline-block; vertical-align: middle;"><a href="https://dribbble.com/"
+                              target="_blank" rel="noopener">
+                              <img src="https://i.ibb.co/kgHyh9rV/dribbble-blur.png" width="34"
+                                alt="dribbble" /></a></span>
+                          <span style="display: inline-block; vertical-align: middle;"><a
+                              href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                              <img src="https://i.ibb.co/N6N12bGy/linkedin-blur.png" width="30"
+                                alt="linkedin" /></a></span>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td align="center">
                         <p style="margin: 0; font-size: 13px">
-                          Address, #PC<br />City, State.
+                          Elm Street, Suite 567<br />
+                          New York, NY 10001 <br />
+                          USA<br />
                         </p>
                       </td>
                     </tr>
@@ -639,7 +627,7 @@
                     <tr>
                       <td align="center">
                         <a href="https://google.com" target="_blank" rel="noopener">
-                          <img src="https://i.ibb.co/rRJxwbNj/logo.png" alt="Blush logo" border="0" width="24"
+                          <img src="https://i.ibb.co/HfBNHg9F/logo-blur.png" alt="logo" border="0" width="48"
                             style="display: block" />
                         </a>
                       </td>
